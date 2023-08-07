@@ -1,6 +1,5 @@
 import React from "react";
 import './Home.css';
-import logo from '../images/logo.jpeg'
 import Bungalows from '../images/Bungalow.png'
 import CountryClub from '../images/CountryClub.png'
 import Maisonette from '../images/Maisonete.png'
@@ -19,7 +18,7 @@ export default function Home() {
             <div className="yuna-section">
                 <img src={yunafarmresort} alt="Yuna Farm Resort" className="yuna-image" />
                 <div className="yuna-details">
-                    <h2>Yuna Farm Resort</h2>
+                <h2 style={{color: 'gold'}}>Yuna Farm Resort</h2>
                     <p>The farm resort is a unique blend of modern living and traditional farming practices, offering visitors the best of both worlds. Experience immersive farm life in a vast land of opportunities.</p>
                 </div>
             </div>
@@ -36,7 +35,7 @@ export default function Home() {
             <div className="yuna-section">
                 <img src={Maisonette} alt="Yuna Farm Resort" className="yuna-image" />
                 <div className="yuna-details">
-                    <h2>Maisonette</h2>
+                <h2 style={{color: 'gold'}}>Maisonette</h2>
                     <p>These luxurious units offer spacious living areas with all rooms ensuite, 
                       allowing for maximum comfort and privacy. The double-volume lounge area adds
                       a touch of elegance and sophistication to the design, making it a
@@ -46,7 +45,7 @@ export default function Home() {
             <div className="yuna-section">
                 <img src={Bungalows} alt="Yuna Farm Resort" className="yuna-image" />
                 <div className="yuna-details">
-                    <h2>Bungalows</h2>
+                <h2 style={{color: 'gold'}}>Bungalows</h2>
                     <p>Yuna Homes also features 9 spacious and luxurious bungalows, each designed
                       with modern aesthetics and functionality in mind. These flat-roof bungalows come
                       with a total area of 330 square meters and are equipped with all the necessary
@@ -56,7 +55,7 @@ export default function Home() {
             <div className="yuna-section">
                 <img src={YunaCityMall} alt="Yuna Farm Resort" className="yuna-image" />
                 <div className="yuna-details">
-                    <h2>Yuna City Mall</h2>
+                <h2 style={{color: 'gold'}}>Yuna City Mall</h2>
                     <p>Yuna City Development's Commercial Center is a one-stop shop for all your
                         commercial needs.</p>
                 </div>
@@ -64,7 +63,7 @@ export default function Home() {
             <div className="yuna-section">
                 <img src={PetrolStation} alt="Yuna Farm Resort" className="yuna-image" />
                 <div className="yuna-details">
-                    <h2>Petrol Station and Convenience Store</h2>
+                <h2 style={{color: 'gold'}}>Petrol Station and Convenience Store</h2>
                     <p>A drive-thru petrol station is located within the premises, allowing for easy 
                       access to fuel up your car while running errands or on the way to work.</p>
                 </div>
@@ -72,7 +71,7 @@ export default function Home() {
             <div className="yuna-section">
                 <img src={Restaurant} alt="Yuna Farm Resort" className="yuna-image" />
                 <div className="yuna-details">
-                    <h2>Restaurant and Club</h2>
+                    <h2 style={{color: 'gold'}}>Restaurant and Club</h2>
                     <p>The restaurant is a modern masterpiece, with a sleek bamboo exterior that exudes
                       elegance and sophistication..</p>
                 </div>
@@ -80,7 +79,7 @@ export default function Home() {
             <div className="yuna-section">
                 <img src={CountryClub} alt="Yuna Farm Resort" className="yuna-image" />
                 <div className="yuna-details">
-                    <h2>Country Club and Cottages</h2>
+                    <h2 style={{color: 'gold'}}>Country Club and Cottages</h2>
                     <p>The Country Club and Cottages at Yuna City Development are the perfect escape from the
                       hustle and bustle of the city. Surrounded by the beauty of nature, these facilities provide a serene
                       environment where visitors can relax and unwind.</p>

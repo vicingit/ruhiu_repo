@@ -18,23 +18,23 @@ export default function About() {
         </p>
 
         <div className="image-section">
-          <img src={about1} alt="Site Image" className="about-image" />
-          <img src={about2} alt="Technical Image" className="about-image" />
+          <img src={about1} alt="Site Imag" className="about-image" />
+          <img src={about2} alt="Technical Imag" className="about-image" />
         </div>
 
         <p>
           Our mission is to go beyond delivering high-quality construction, engineering, and architectural solutions. We aim to create sustainable and innovative spaces that not only exceed client expectations but also enhance communities and contribute to Kenya's holistic development.
         </p>
         <div className="image-section">
-          <img src={about3} alt="Site Image" className="about-image" />
-          <img src={about4} alt="Green Architecture Image" className="about-image" />
+          <img src={about3} alt="Site Imag" className="about-image" />
+          <img src={about4} alt="Green Architecture Imag" className="about-image" />
         </div>
         <p>
           We pride ourselves on meticulous attention to detail and an unwavering commitment to exceptional workmanship. At Ark Link, every project becomes a testament to our dedication to client satisfaction. Our team of professionals, from architects to engineers, ensures that creativity and expertise are at the heart of everything we do.
         </p>
         <div className="image-section">
-          <img src={about5} alt="Site Image" className="about-image" />
-          <img src={about6} alt="Green Architecture Image" className="about-image" />
+          <img src={about5} alt="Site Imag" className="about-image" />
+          <img src={about6} alt="Green Architecture Imag" className="about-image" />
         </div>
         <p>
           Embracing sustainability, we incorporate energy-efficient systems, groundbreaking technologies, and eco-friendly materials in all our projects. By staying updated with industry trends and advancements, we're always a step ahead, ensuring efficiency, cost-effectiveness, and environmental harmony.

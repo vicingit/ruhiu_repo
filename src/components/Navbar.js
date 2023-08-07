@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom"; // Use NavLink instead of Link
+import { NavLink } from "react-router-dom";
 import { ArrowRightIcon } from "@heroicons/react/solid";
 import "./Navbar.css"; 
 import logo from '../images/logo.jpeg'; 
@@ -19,13 +19,21 @@ export default function Navbar() {
           <NavLink to="/what-we-do" activeClassName="active" className="navbar-link">
             What We Do
           </NavLink>
+          <div className="navbar-dropdown">
+            Projects
+            <div className="navbar-dropdown-content">
+              <NavLink to="/educational" activeClassName="active" className="navbar-link">
+                Educational
+              </NavLink>
+              <NavLink to="/industrial" activeClassName="active" className="navbar-link">
+                Industrial
+              </NavLink>
+            </div>
+          </div>
           <NavLink to="/values" activeClassName="active" className="navbar-link">
             Core Values
           </NavLink>
-          <NavLink to="/contact" activeClassName="active" className="navbar-link">
-            Contacts
-          </NavLink>
-        </nav>
+          </nav>
         <NavLink to="/contact" className="navbar-button">
           Reach Us
           <ArrowRightIcon className="navbar-button-icon" />
