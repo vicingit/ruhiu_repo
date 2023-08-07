@@ -1,39 +1,35 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom"; // Use NavLink instead of Link
 import { ArrowRightIcon } from "@heroicons/react/solid";
-import "./Navbar.css"; // Import the CSS file for styling
+import "./Navbar.css"; 
+import logo from '../images/logo.jpeg'; 
 
 export default function Navbar() {
   return (
     <header className="navbar">
-      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <Link to="/" className="navbar-logo">
-          Ark Link
-        </Link>
+      <div className="container mx-auto flex p-5 flex-wrap items-center justify-between">
+        <NavLink to="/" exact className="navbar-brand">
+          <img src={logo} alt="Ark Link Properties Logo" className="navbar-logo" />
+          Ark Link Properties
+        </NavLink>
         <nav className="navbar-items">
-          <Link to="/about" className="navbar-link">
+          <NavLink to="/about" activeClassName="active" className="navbar-link">
             About
-          </Link>
-          <Link to="/what-we-do" className="navbar-link">
+          </NavLink>
+          <NavLink to="/what-we-do" activeClassName="active" className="navbar-link">
             What We Do
-          </Link>
-          {/* <Link to="/Yunacity" className="navbar-link">
-            Yuna City
-          </Link> */}
-          <Link to="/values" className="navbar-link">
+          </NavLink>
+          <NavLink to="/values" activeClassName="active" className="navbar-link">
             Core Values
-          </Link>
-          <Link to="/contact" className="navbar-link">
+          </NavLink>
+          <NavLink to="/contact" activeClassName="active" className="navbar-link">
             Contacts
-          </Link>
+          </NavLink>
         </nav>
-        <Link
-          to="/contact"
-          className="navbar-button"
-        >
+        <NavLink to="/contact" className="navbar-button">
           Reach Us
           <ArrowRightIcon className="navbar-button-icon" />
-        </Link>
+        </NavLink>
       </div>
     </header>
   );

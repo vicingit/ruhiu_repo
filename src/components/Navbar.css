@@ -1,57 +1,71 @@
 .navbar {
-    background-color: #4c624c;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .navbar-logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #fff;
-    text-decoration: none;
-  }
-  
+  background-color: #1a202c;  /* Dark gray background */
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.navbar-logo {
+  width: 50px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.navbar-items {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: gold;
+}
+
+.navbar-button {
+  color: white;
+  background-color: rgb(164, 158, 122);
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-button:hover {
+  background-color: #e6b800;  /* Darker gold for hover */
+}
+
+.navbar-button-icon {
+  width: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.active {
+  color: gold; /* or any other color/style you'd like for the active tab */
+  border-bottom: 2px solid gold; /* optional: adds an underline to the active link */
+}
+
+/* For responsiveness */
+@media (max-width: 768px) {
   .navbar-items {
-    display: flex;
-    gap: 1rem;
+    display: none;  /* Hide on smaller screens */
   }
-  
-  .navbar-link {
-    font-size: 1rem;
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .navbar-link:hover {
-    color: #d8d8d8;
-  }
-  
-  .navbar-button {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ff5252;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-  }
-  
-  .navbar-button:hover {
-    background-color: #d81b1b;
-  }
-  
-  .navbar-button-icon {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-left: 0.5rem;
-  }
-  
+}

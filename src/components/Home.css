@@ -1,24 +1,85 @@
-.home {
-    text-align: center;
-    margin-top: 50px;
+.home-container {
+  background-color: #110e0e;
+  padding: 40px 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+h2 {
+  text-align: center;
+  color: gold;
+}
+.intro-text {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #34495e;
+}
+
+.yuna-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+  transition: transform 0.3s;
+}
+
+.yuna-section:hover {
+  transform: scale(1.02);
+}
+
+.yuna-image {
+  width: 45%;
+  max-width: 300px;
+  border-radius: 8px;
+  margin: 0 15px;
+}
+
+.yuna-details {
+  flex: 1;
+}
+
+.yuna-details h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #e74c3c;
+}
+
+.yuna-details p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #34495e;
+}
+
+.italic-justified {
+  font-style: italic;
+  text-align: center;
+}
+
+
+.cta {
+  background-color: #797a68;
+  color: #dfb3b3;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .yuna-image, .yuna-details {
+      width: 100%;
   }
-  
-  h1 {
-    font-size: 32px;
-    color: #333;
-  }
-  
-  .home-image {
-    display: block;
-    margin: 0 auto;
-    max-width: 400px;
-    height: auto;
-    margin-top: 30px;
-  }
-  
-  p {
-    margin-top: 20px;
-    font-size: 16px;
-    color: #666;
-  }
-  
+}

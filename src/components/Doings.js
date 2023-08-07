@@ -52,23 +52,50 @@ const services = [
       "We strategically collaborate with partners who are leaders in their respective fields to enhance our capabilities and provide value-added services. By forming joint ventures and alliances, we leverage each other's expertise to deliver exceptional results on large-scale projects.",
   },
 ];
+// const Doings = () => {
+//   return (
+//     <section id="doings">
+//       <h2 className="sm:text-4xl text-3xl font-medium title-font text-white mb-12">
+//           What We Do
+//         </h2>
+//       <div className="container px-5 py-10 mx-auto text-center">
+//         <div className="flex flex-wrap -m-4">
+//           {services.map((service, index) => (
+//             <div key={index} className="p-4 md:w-1/2 w-full">
+//               <div className="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
+//                 <service.icon className="block w-8 text-gray-500 mb-4 mx-auto" />
+//                 <h3 className="text-xl font-medium mb-2">{service.title}</h3>
+//                 <p className="text-base leading-relaxed mb-6">{service.description}</p>
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default Doings;
 const Doings = () => {
   return (
     <section id="doings">
       <h2 className="sm:text-4xl text-3xl font-medium title-font text-white mb-12">
-          What We Do
-        </h2>
+        What We Do
+      </h2>
       <div className="container px-5 py-10 mx-auto text-center">
         <div className="flex flex-wrap -m-4">
-          {services.map((service, index) => (
-            <div key={index} className="p-4 md:w-1/2 w-full">
-              <div className="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
-                <service.icon className="block w-8 text-gray-500 mb-4 mx-auto" />
-                <h3 className="text-xl font-medium mb-2">{service.title}</h3>
-                <p className="text-base leading-relaxed mb-6">{service.description}</p>
+          {services.map((service, index) => {
+            const IconComponent = service.icon; // Naming convention for JSX elements
+            return (
+              <div key={index} className="p-4 md:w-1/2 w-full">
+                <div className="service-card h-full bg-gray-800 bg-opacity-40 p-8 rounded">
+                  <IconComponent className="service-card-icon block w-8 text-gray-500 mb-4 mx-auto" />
+                  <h3 className="service-card-title text-xl font-medium mb-2">{service.title}</h3>
+                  <p className="service-card-desc text-base leading-relaxed mb-6">{service.description}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

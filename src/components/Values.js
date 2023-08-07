@@ -1,5 +1,4 @@
 import React from "react";
-//import { HeartIcon, UsersIcon, LightningBoltIcon, GlobeAltIcon } from "@heroicons/react/solid";
 import { CheckCircleIcon } from "@heroicons/react/solid";
 
 import './CoreValues.css';
@@ -47,26 +46,22 @@ const CoreValues = () => {
   return (
     <section id="core-values">
       <h2 className="sm:text-4xl text-3xl font-medium title-font text-white mb-12">
-          Our Core Values
-        </h2>
+        Our Core Values
+      </h2>
       <div className="container px-5 py-10 mx-auto text-center">
         <div className="flex flex-wrap -m-4">
-          {coreValues.map((value, index) => (
-            <div key={index} className="p-4 md:w-1/2 w-full">
-              <div className="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
-                <value.icon className="block w-8 text-gray-500 mb-4" />
-                <p className="leading-relaxed mb-6">{value.description}</p>
-                <div className="flex items-center">
-                  <span className="w-10 h-10 bg-gray-500 rounded-full flex-shrink-0"></span>
-                  <div className="flex-grow pl-4">
-                    <h2 className="text-white text-lg title-font font-medium mb-1">
-                      {value.title}
-                    </h2>
-                  </div>
+          {coreValues.map((value, index) => {
+            const IconComponent = value.icon; // Naming convention for JSX elements
+            return (
+              <div key={index} className="p-4 md:w-1/2 w-full">
+                <div className="value-card h-full p-8 rounded">
+                  <IconComponent className="value-icon block w-8 text-gray-500 mb-4" />
+                  <h2 className="value-title">{value.title}</h2>
+                  <p className="value-description text-base leading-relaxed mb-6">{value.description}</p>
                 </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
