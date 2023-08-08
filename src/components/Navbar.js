@@ -22,11 +22,11 @@ export default function Navbar() {
           <div className="navbar-dropdown">
             Projects
             <div className="navbar-dropdown-content">
-              <NavLink to="/educational" activeClassName="active" className="navbar-link">
-                Educational
+              <NavLink to="/what-we-do" activeClassName="active" className="navbar-link">
+                Commercial
               </NavLink>
-              <NavLink to="/industrial" activeClassName="active" className="navbar-link">
-                Industrial
+              <NavLink to="/what-we-do" activeClassName="active" className="navbar-link">
+                Residential
               </NavLink>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaTwitter, FaLinkedin, FaFacebook } from 'react-icons/fa'; // Import the social media icons
+import { FaTwitter, FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa'; // Import the social media icons
 import './Contact.css';
 
 const Contact = () => {
@@ -24,6 +24,9 @@ const Contact = () => {
       <div className="contact-social">
         <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
           <FaTwitter size={40} />
+        </a>
+        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
+          <FaInstagram size={40} />
         </a>
         <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
           <FaLinkedin size={40} />
