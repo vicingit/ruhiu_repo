@@ -1,7 +1,7 @@
 /* Doings.css */
 
 #doings {
-  background-color: black; /* Consider changing the background color for better contrast */
+  background-color: #44421e; /* Consider changing the background color for better contrast */
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
@@ -11,6 +11,10 @@
   color: gold; /* Making the title stand out */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   margin-bottom: 2rem;
+}
+
+.bg-gold {
+  background-color: #64614f;
 }
 
 .service-card {

@@ -1,9 +1,13 @@
 .home-container {
-  background-color: #110e0e;
+  background-color: #aa882e;
   padding: 40px 20px;
   max-width: 1300px;
   margin: 0 auto;
   font-family: 'Arial', sans-serif;
+}
+
+body{
+  background-color: #1f2311;
 }
 
 h1 {

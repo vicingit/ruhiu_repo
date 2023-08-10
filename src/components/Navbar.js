@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { ArrowRightIcon } from "@heroicons/react/solid";
 import "./Navbar.css"; 
-import logo from '../images/logo.jpeg'; 
+import logo from '../images/1.png'; 
 
 export default function Navbar() {
   return (
@@ -22,10 +22,13 @@ export default function Navbar() {
           <div className="navbar-dropdown">
             Projects
             <div className="navbar-dropdown-content">
-              <NavLink to="/what-we-do" activeClassName="active" className="navbar-link">
+              <NavLink to="dash" activeClassName="active" className="navbar-link">
                 Commercial
               </NavLink>
-              <NavLink to="/what-we-do" activeClassName="active" className="navbar-link">
+              <NavLink to="dash" activeClassName="active" className="navbar-link">
+                Hotel $ Resort
+              </NavLink>
+              <NavLink to="dash" activeClassName="active" className="navbar-link">
                 Residential
               </NavLink>
             </div>
